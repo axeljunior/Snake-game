@@ -20,7 +20,7 @@ class Text(object):
         fontobj = pygame.font.SysFont(font, size)
 
         if not isinstance(filefont,type(None)):
-            fontobj = pygame.font.Font(os.path.join('assets',filefont), size)
+            fontobj = pygame.font.Font(os.path.join('assets/fonts',filefont), size)
 
         textobj = fontobj.render(text, 1, color)
         textrect = textobj.get_rect()
@@ -68,11 +68,11 @@ class ArtResource(object):
     __sfxLibrary={}
     @staticmethod
     def image_load(filename):
-        return os.path.join('assets',filename)
+        return os.path.join('assets/images',filename)
 
     @classmethod
     def sound_add_sfx(cls,filename,extension,volume=None):
-        cls.__sfxLibrary[filename] = pygame.mixer.Sound(os.path.join('assets',f'{filename}.{extension}'))
+        cls.__sfxLibrary[filename] = pygame.mixer.Sound(os.path.join('assets/sounds',f'{filename}.{extension}'))
         if not isinstance(volume,type(None)):
             cls.__sfxLibrary[filename].set_volume(float(volume))
     @classmethod
@@ -81,7 +81,7 @@ class ArtResource(object):
 
     @staticmethod
     def sound_add_bgm(filename,extension,volume):
-        pygame.mixer.music.load(os.path.join('assets',f'{filename}.{extension}'))
+        pygame.mixer.music.load(os.path.join('assets/sounds',f'{filename}.{extension}'))
         pygame.mixer.music.set_volume(float(volume))
     @staticmethod
     def sound_play_bgm():
