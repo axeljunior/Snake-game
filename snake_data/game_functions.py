@@ -9,8 +9,8 @@ from snake_data.game_objects.food import *
 
 class Game_Screens(object):
     def __init__(self, **objectScene):
-        wScreen = Reponsity.width_screen()
-        hScreen = Reponsity.height_screen()
+        wScreen = Responsivity.width_screen()
+        hScreen = Responsivity.height_screen()
 
         self.screen = pygame.display.set_mode((wScreen, 550))
         pygame.display.set_caption("Snake Game")
@@ -70,7 +70,7 @@ class Collider(object):
         if self.colliders['snake'].snakeHead.rect.collidepoint(food.rect.center):
             self.colliders['snake'].eating(self.colliders['food'].foodCollor)
             ArtResource.sound_play_sfx('sfx_point')
-            self.colliders['food'].new_food_position(self.colliders['snake'].snakeCordinates,self.colliders['wall'].centralCoordinates)
+            self.colliders['food'].new_food_position(self.colliders['snake'].snakeCoordinates,self.colliders['wall'].centralCoordinates)
         
         for obstacle in wall:
             if self.colliders['snake'].snakeHead.rect.contains(obstacle.rect):

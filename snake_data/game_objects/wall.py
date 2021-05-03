@@ -5,22 +5,22 @@ from snake_data.toolkit import *
 class Wall(object):
     def __init__(self):
 
-        wR_scale = Reponsity.rectangle_scale()
-        wR_height_screen = Reponsity.height_screen()
-        wR_width_screen = Reponsity.width_screen()
+        wR_scale = Responsivity.rectangle_scale()
+        wR_height_screen = Responsivity.height_screen()
+        wR_width_screen = Responsivity.width_screen()
 
-        responsyHeight = Reponsity.height_screen()//Reponsity.rectangle_scale()
-        responsyWidth = Reponsity.width_screen()//Reponsity.rectangle_scale()
+        responsHeight = Responsivity.height_screen()//Responsivity.rectangle_scale()
+        responsWidth = Responsivity.width_screen()//Responsivity.rectangle_scale()
 
-        boardCoordinates = [(x*Reponsity.rectangle_scale(), 0) for x in list(range(responsyWidth))]
+        boardCoordinates = [(x*Responsivity.rectangle_scale(), 0) for x in list(range(responsWidth))]
 
-        boardCoordinates += [(0, y*wR_scale) for y in list(range(responsyHeight))]
-        boardCoordinates += [(x*wR_scale, wR_height_screen-wR_scale) for x in list(range(responsyWidth))]
-        boardCoordinates += [(wR_width_screen-wR_scale, y*wR_scale) for y in list(range(responsyHeight))]
+        boardCoordinates += [(0, y*wR_scale) for y in list(range(responsHeight))]
+        boardCoordinates += [(x*wR_scale, wR_height_screen-wR_scale) for x in list(range(responsWidth))]
+        boardCoordinates += [(wR_width_screen-wR_scale, y*wR_scale) for y in list(range(responsHeight))]
 
         self.__centralCoordinates = []
-        self.__centralCoordinates = [(x*wR_scale,y*wR_scale) for x in list(range(1,responsyWidth)) 
-                                                            for y in list(range(1,responsyHeight))]
+        self.__centralCoordinates = [(x*wR_scale,y*wR_scale) for x in list(range(1,responsWidth)) 
+                                                            for y in list(range(1,responsHeight))]
         
         self.__centralCoordinates = set(self.__centralCoordinates) - set(boardCoordinates)
 

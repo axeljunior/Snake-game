@@ -4,28 +4,28 @@ from snake_data.toolkit import *
 
 class Snake(object):
     def __init__(self, startPosition):
-        self.__scale = Reponsity.rectangle_scale()
+        self.__scale = Responsivity.rectangle_scale()
         self.__size = 3
         self.__snakeCollor = 'violet'
         self.__snakeViva = True
         self.__orientation = 'Right'
-        self.__snakeCordinates = []
-        self.__snakeCordinates.append(startPosition)
+        self.__snakeCoordinates = []
+        self.__snakeCoordinates.append(startPosition)
         self.__xHead, self.__yHead = startPosition
 
         self.__snakeHead = Rectangle(area=(self.__scale,self.__scale), position=startPosition)
         self.__snakeBody = [Rectangle(area=(self.__scale,self.__scale), position=(self.__xHead-self.__scale*num,self.__yHead)) 
                                     for num in list(range(1,self.__size))]
 
-        self.__snakeCordinates.extend([(self.__xHead-self.__scale*num,self.__yHead) 
+        self.__snakeCoordinates.extend([(self.__xHead-self.__scale*num,self.__yHead) 
                                         for num in list(range(1,self.__size))])
 
 
     def move_snake(self):
         self.__snakeBody.insert(0,Rectangle(area=(self.__scale,self.__scale),position=(self.__xHead,self.__yHead)))
-        self.__snakeCordinates.insert(0,(self.__xHead,self.__yHead))
+        self.__snakeCoordinates.insert(0,(self.__xHead,self.__yHead))
         self.__snakeBody.pop()
-        self.__snakeCordinates.pop()
+        self.__snakeCoordinates.pop()
 
         if self.orientation == 'Left':
             self.__xHead-=self.__scale           
@@ -37,7 +37,7 @@ class Snake(object):
             self.__yHead+=self.__scale
 
         self.__snakeHead.update((self.__xHead,self.__yHead))
-        self.__snakeCordinates[0] = (self.__xHead,self.__yHead)            
+        self.__snakeCoordinates[0] = (self.__xHead,self.__yHead)            
 
     def eating(self,foodcollor=None):
         self.__size += 1
@@ -45,7 +45,7 @@ class Snake(object):
         xTail = self.__snakeBody[-2:][0].rect.x
         yTail = self.__snakeBody[-2:][0].rect.y
         self.__snakeBody[len(self.__snakeBody)-1].update((xTail,yTail))
-        self.__snakeCordinates.append((xTail,yTail))
+        self.__snakeCoordinates.append((xTail,yTail))
         
 
     @property
@@ -55,8 +55,8 @@ class Snake(object):
     def snakeBody(self):
         return self.__snakeBody
     @property
-    def snakeCordinates(self):
-        return self.__snakeCordinates
+    def snakeCoordinates(self):
+        return self.__snakeCoordinates
     @property
     def snakeCollor(self):
         return self.__snakeCollor

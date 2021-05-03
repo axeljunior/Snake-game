@@ -5,9 +5,9 @@ from snake_data.game_objects.rectangles import *
 class Food(object):
     def __init__(self):
         
-        self.__rectScale = (Reponsity.rectangle_scale(),Reponsity.rectangle_scale())
-        self.__responsyHeight = Reponsity.height_screen()//Reponsity.rectangle_scale()
-        self.__responsyWidth = Reponsity.width_screen()//Reponsity.rectangle_scale()
+        self.__rectScale = (Responsivity.rectangle_scale(),Responsivity.rectangle_scale())
+        self.__responsyHeight = Responsivity.height_screen()//Responsivity.rectangle_scale()
+        self.__responsyWidth = Responsivity.width_screen()//Responsivity.rectangle_scale()
 
         self.__foodCollor = 'red'
         self.__xFood = (random.randint(1, self.__responsyWidth-2))*self.__rectScale[0]
