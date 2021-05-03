@@ -1,6 +1,3 @@
 __pycache__/
 snake_data/lab.py
-Snake game\assets\others
-Tasks.txt
-setup.py
-build/
+snake/others
