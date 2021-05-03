@@ -3,6 +3,7 @@ import pygame, os, time, random
 from pygame.locals import *
 
 from snake_data.toolkit import *
+from snake_data.lab import *
 from snake_data.game_functions import *
 
 def game_snake():
