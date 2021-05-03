@@ -2,3 +2,5 @@ __pycache__/
 assets/others
 snake_data/lab.py
 Tasks.txt
+setup.py
+build/

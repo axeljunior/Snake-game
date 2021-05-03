@@ -70,7 +70,7 @@ class Collider(object):
         if self.colliders['snake'].snakeHead.rect.collidepoint(food.rect.center):
             self.colliders['snake'].eating(self.colliders['food'].foodCollor)
             ArtResource.sound_play_sfx('sfx_point')
-            self.colliders['food'].new_food_position(self.colliders['snake'].snakeCordinates)
+            self.colliders['food'].new_food_position(self.colliders['snake'].snakeCordinates,self.colliders['wall'].centralCoordinates)
         
         for obstacle in wall:
             if self.colliders['snake'].snakeHead.rect.contains(obstacle.rect):
@@ -85,8 +85,6 @@ class Collider(object):
                 time.sleep(0.15)
                 # self.colliders['snake'].snakeViva = False
                 print('MORREU CORPO')
-
-# ========================TESTES=========================
 
 if __name__ == '__main__':
     pass
