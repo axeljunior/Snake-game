@@ -30,19 +30,21 @@ decidi continuar trabalhando no código com o objetivo de praticar algumas padr�
 
 <h3 id="Demonstrac-oes">Demonstrações</h3>
 
-- [ ] Arquivo .exe para as pessoas poderem testar com facilidade
-- [ ] Gifs que demonstrem as principais features para que as pessaas entendam a vibe do projeto sem precisa jogar
+🚧 Arquivo .exe 🛑 Em construção... 🚧
 
 <h3 id="todo">To do & Work in</h3>
 
-- [ ] Area de To do's e working at
+🚧 Em construção... 🚧
+
 <h3 id="creditos">Creditos</h3>
 
-- [ ] Area de Créditos
-<h3 id="autor">Autor 🦸</h3>
+🚧 Area de Créditos 🛑 Em construção... 🚧
 
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57641489?v=4" width="100px;" alt=""/>
- 
+<h3 id="autor">Autor</h3>
+
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57641489?v=4" width="100px;" alt=""/>
+
+Feito com 🖤 por Axél Junior 👋🏽 entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Axel-júnior?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/axel-júnior/)](https://www.linkedin.com/in/axel-júnior/) 
 [![Gmail Badge](https://img.shields.io/badge/-alexandre_junior@id.uff.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alexandre_junior@id.uff.br)](mailto:alexandre_junior@id.uff.br)
