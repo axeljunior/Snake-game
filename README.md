@@ -10,7 +10,7 @@
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    
-   <a href="https://github.com/tgmarinho/axeljunior/Snake-game">
+   <a href="https://github.com/axeljunior/Snake-game">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/axeljunior/Snake-game?style=social">
   </a>
  
