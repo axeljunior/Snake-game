@@ -33,14 +33,18 @@ def game_snake():
                 pygame.quit()
                 exit()
             if event.type == KEYDOWN:
-                if event.key == K_w and player.orientation != 'Down':           
+                if event.key == K_w and player.orientation != 'Down':
                     player.orientation = 'Up'
-                if event.key == K_a and player.orientation != 'Right':            
+                    break
+                elif event.key == K_a and player.orientation != 'Right': 
                     player.orientation = 'Left'
-                if event.key == K_s and player.orientation != 'Up':             
+                    break
+                elif event.key == K_s and player.orientation != 'Up': 
                     player.orientation = 'Down'
-                if event.key == K_d and player.orientation != 'Left':          
+                    break
+                elif event.key == K_d and player.orientation != 'Left':  
                     player.orientation = 'Right'
+                    break
 
         collider.collision_calculate()
         player.move_snake()
