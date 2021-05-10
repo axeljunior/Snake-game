@@ -1,14 +1,16 @@
-import pygame, os, time, random
+import pygame, sys, os, time, random
 from pygame.locals import *
 
 from snake_data.toolkit import *
-from snake_data.lab import *
+# from snake_data.lab import *
 from snake_data.game_functions import *
+
+if getattr(sys, 'frozen', False):
+    os.chdir(sys._MEIPASS)
 
 def game_snake():
     os.environ['SDL_VIDEO_CENTERED'] = '1'
     timer = pygame.time.Clock()
-
     pygame.init()
     pygame.mixer.init()
 
@@ -25,6 +27,7 @@ def game_snake():
 
     ArtResource.sound_play_bgm()
 
+    IMORTAL = False
     while player.snakeViva:
         timer.tick(15)
         updateScreen.stamp_screen()
@@ -45,8 +48,15 @@ def game_snake():
                 elif event.key == K_d and player.orientation != 'Left':  
                     player.orientation = 'Right'
                     break
+                elif event.key == K_0:
+                    if IMORTAL:
+                        IMORTAL=False
+                        print('IMORTAL off')
+                    else:
+                        IMORTAL=True
+                        print('IMORTAL on')
 
-        collider.collision_calculate()
+        collider.collision_calculate(IMORTAL=IMORTAL)
         player.move_snake()
         pygame.display.flip()
 

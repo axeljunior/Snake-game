@@ -2,3 +2,7 @@ __pycache__/
 snake_data/lab.py
 snake/others
 *.pyc
+dist/
+build/
+icon.ico
+game.spec

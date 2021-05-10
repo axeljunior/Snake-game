@@ -27,21 +27,20 @@ class Game_Screens(object):
     def stamp_screen(self):
         self.screen.fill((0,0,0))
 
-        self.__blit(objectImage=self.ground.image,objectRect=self.ground.rect)
+        self.__blit(self.ground.image,self.ground.rect)
         
-        self.__blit(objectImage=self.background.image,objectRect=self.background.rect)
+        self.__blit(self.background.image,self.background.rect)
 
         for coordinates in list(self.objectScene['wall'].wall.keys()):
-            self.__blit(objectImage=self.objectScene['wall'].wall[coordinates].image,
-                    objectRect=self.objectScene['wall'].wall[coordinates].rect)
+            self.__blit(self.objectScene['wall'].wall[coordinates].image,
+                    self.objectScene['wall'].wall[coordinates].rect)
           
-        self.__draw(objectCollor=self.objectScene['food'].foodCollor,objectRectangle=self.objectScene['food'].food)
+        self.__draw(self.objectScene['food'].foodCollor,self.objectScene['food'].food)
 
-        self.__draw(objectCollor=self.objectScene['snake'].snakeCollor,objectRectangle=self.objectScene['snake'].snakeHead)
+        self.__draw(self.objectScene['snake'].snakeCollor,self.objectScene['snake'].snakeHead)
         for count,snakePart in enumerate(list(range(self.objectScene['snake'].size))):
-            self.__draw(objectCollor=Collors.change_collor(tam=count,cor=self.objectScene['snake'].snakeCollor),
-                    objectRectangle=self.objectScene['snake'].snakeBody[snakePart])
-
+            self.__draw(Collors.change_collor(tam=count,cor=self.objectScene['snake'].snakeCollor),
+                    self.objectScene['snake'].snakeBody[snakePart])
 
         self.__score(self.objectScene['snake'].size)
 
@@ -62,7 +61,7 @@ class Collider(object):
     def __init__(self, **colliders):
         self.colliders = colliders
 
-    def collision_calculate(self):
+    def collision_calculate(self,IMORTAL=False):
         body = self.colliders['snake'].snakeBody
         wall = list(self.colliders['wall'].wall.values())
         food = self.colliders['food'].food
@@ -76,15 +75,19 @@ class Collider(object):
             if self.colliders['snake'].snakeHead.rect.contains(obstacle.rect):
                 ArtResource.sound_play_sfx('sfx_hit')
                 time.sleep(0.15)
-                # self.colliders['snake'].snakeViva = False
-                print('MORREU MURO')
+                if IMORTAL:
+                    print('MORREU MURO')
+                else:
+                    self.colliders['snake'].snakeViva = False
         
         for obstacle in body:
             if self.colliders['snake'].snakeHead.rect.contains(obstacle.rect):
                 ArtResource.sound_play_sfx('sfx_hit')
                 time.sleep(0.15)
-                # self.colliders['snake'].snakeViva = False
-                print('MORREU CORPO')
+                if IMORTAL:
+                    print('MORREU CORPO')
+                else:
+                    self.colliders['snake'].snakeViva = False
 
 if __name__ == '__main__':
     pass

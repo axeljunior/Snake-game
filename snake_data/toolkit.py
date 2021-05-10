@@ -16,10 +16,10 @@ class Responsivity(object):
 
 class Text(object):
     @staticmethod
-    def draw_text(screen,text, color, surface,size=20,font=None,filefont=None):
-        fontobj = pygame.font.SysFont(font, size)
+    def draw_text(screen,text, color, surface,size=20,filefont='arial.ttf'):
+        fontobj = pygame.font.Font(os.path.join('assets/fonts',filefont), size)
 
-        if not isinstance(filefont,type(None)):
+        if filefont != 'arial.ttf':
             fontobj = pygame.font.Font(os.path.join('assets/fonts',filefont), size)
 
         textobj = fontobj.render(text, 1, color)
