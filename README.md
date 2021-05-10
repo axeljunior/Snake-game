@@ -19,7 +19,7 @@
 <p align="center">
  <a href="#Sobre">Sobre</a> •
  <a href="#Demonstrac-oes">Demonstração</a> • 
- <a href="#todo">To do & Work in</a> • 
+ <a href="#todo">To-do & Work in</a> • 
  <a href="#creditos">Créditos</a> • 
  <a href="#autor">Autor</a>
 </p>
@@ -34,10 +34,14 @@
 
 <h2 id="todo">👨‍💻 To-do & Work in</h2>
 
-- [ ] Modo alternativo de jogo
-- [ ] Sistema de Rank
 - [ ] Menus 
-<p align="center"> <b>Menus</b> - Em geral a ideia aqui é facilitar a navegação entre as futuras features, e o reinicio de uma partida. Alem disso quero por a snake para ficar em um ciclo hamiltoniano no fundo do menu principal. 🚧 Em construção... 🚧</p>
+<p align="center"> Em geral a ideia aqui é facilitar a navegação entre as futuras features, e o reinicio de uma partida. Alem disso quero por a snake para ficar em um ciclo hamiltoniano no fundo do menu principal. 🚧 Em construção... 🚧</p>
+
+- [ ] Sistema de Rank
+<p align="center"> A ideia aqui é que, quando perder, você possa adicionar as suas iniciais e, ao abrir o jogo novamente, sua pontuação anterior ainda estará lá. 🛑</p>
+
+- [ ] Modo alternativo de jogo
+<p align="center"> No modo clássico do snake você simplesmente pega pontos até que cubra toda a tela e não reste mais posições válidas. Neste modo serão adicionados “power-ups” comidas especiais que deem habilidades para a snake. 🛑</p>
 
 <h2 id="creditos">🤝 Creditos</h2>
 
@@ -54,7 +58,7 @@
    * Imagens
      * Icone de <a href="https://icon-icons.com/users/5PD4hLKzPcodcgTEWk75F/icon-sets/">Vincent Le Moign</a>
 <!--te-->
-<h2 id="autor">Autor</h2>
+<h2 id="autor">👾 Autor</h2>
 
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57641489?v=4" width="100px;" alt=""/>
 
