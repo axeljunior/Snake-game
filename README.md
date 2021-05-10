@@ -18,41 +18,47 @@
 
 <p align="center">
  <a href="#Sobre">Sobre</a> •
- <a href="#Demonstrac-oes">Demonstrações</a> • 
+ <a href="#Demonstrac-oes">Demonstração</a> • 
  <a href="#todo">To do & Work in</a> • 
  <a href="#creditos">Créditos</a> • 
  <a href="#autor">Autor</a>
 </p>
 
-<h3 id="Sobre">Sobre</h3>
+<h2 id="Sobre">🔖 Sobre</h2>
 <p align="center">Esse foi o projeto de conclusão da disciplina de Python na faculdade que, após o termino, decidi continuar trabalhando no código com o objetivo de praticar algumas padrões da linguagem, boas praticas e a própria pygame</p>
 
-<h3 id="Demonstrac-oes">Demonstrações</h3>
+<h2 id="Demonstrac-oes">💼 Demonstração</h2>
 
-### 🚧 Arquivo .exe 🛑 Em construção... 🚧
+<p align="center">Caso queira experimentar o jogo, basta baixar o arquivo "Snake Game.exe" na pasta "Game" do repositorio.</p>
+<p> ‼️ OBS: Seu antvirus pode apitar por estar baixando um .exe dessa forma, mas garanto que é seguro!! Outra forma de testar é tendo o python e o pygame instalados na máquina e rodando o código.</p>
 
-<h3 id="todo">To do & Work in</h3>
+<h2 id="todo">👨‍💻 To-do & Work in</h2>
 
-### 🚧 Em construção... 🚧
+- [ ] Modo alternativo de jogo
+- [ ] Sistema de Rank
+- [ ] Menus 
+<p align="center"> <b>Menus</b> - Em geral a ideia aqui é facilitar a navegação entre as futuras features, e o reinicio de uma partida. Alem disso quero por a snake para ficar em um ciclo hamiltoniano no fundo do menu principal. 🚧 Em construção... 🚧</p>
 
-<h3 id="creditos">Creditos</h3>
+<h2 id="creditos">🤝 Creditos</h2>
 
 <!--ts-->
-   * Musica
+   * Musicas
      * Powerup! de <a href="https://www.youtube.com/watch?v=mrgVpZhjOWk">Jeremy Blake</a>
      * Pentatonic de <a href="https://opengameart.org/content/8-bit-looping-pentatonic-music">Open Game Art</a>
-   * SFX
+   * SFX's
      * Pentatonic de <a href="https://opengameart.org/content/8-bit-looping-pentatonic-music">Open Game Art</a>
      * Coin de <a href="https://opengameart.org/content/plingy-coin">Open Game Art</a>
      * Hit_2 de <a href="https://opengameart.org/content/8-bit-sound-effects-library">Open Game Art</a>
-   * Font
+   * Font's
      * Pixeled de <a href="https://www.dafont.com/pt/pixeled.font">OmegaPC777</a>
+   * Imagens
+     * Icone de <a href="https://icon-icons.com/users/5PD4hLKzPcodcgTEWk75F/icon-sets/">Vincent Le Moign</a>
 <!--te-->
-<h3 id="autor">Autor</h3>
+<h2 id="autor">Autor</h2>
 
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57641489?v=4" width="100px;" alt=""/>
 
-Feito com 🖤 por Axél Junior 👋🏽 entre em contato!
+Feito por Axél Junior 👋🏽 entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Axel-júnior?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/axel-júnior/)](https://www.linkedin.com/in/axel-júnior/) 
 [![Gmail Badge](https://img.shields.io/badge/-alexandre_junior@id.uff.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alexandre_junior@id.uff.br)](mailto:alexandre_junior@id.uff.br)
