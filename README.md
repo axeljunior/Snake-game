@@ -27,12 +27,12 @@
 <h2 id="Sobre">🔖 Sobre</h2>
 <p align="center">Esse foi o projeto de conclusão da disciplina de Python na faculdade que, após o termino, decidi continuar trabalhando no código com o objetivo de praticar algumas padrões da linguagem, boas praticas e a própria pygame</p>
 
-<h2 id="Demonstrac-oes">💼 Demonstração</h2>
+<h2 id="Demonstrac-oes">📽 Demonstração</h2>
 
 <p align="center">Caso queira experimentar o jogo, basta baixar o arquivo "Snake Game.exe" na pasta "Game" do repositorio.</p>
 <p> ‼️ OBS: Seu antvirus pode apitar por estar baixando um .exe dessa forma, mas garanto que é seguro!! Outra forma de testar é tendo o python e o pygame instalados na máquina e rodando o código.</p>
 
-<h2 id="todo">👨‍💻 To-do & Work in</h2>
+<h2 id="todo">💼 To-do & Work in</h2>
 
 - [ ] Menus 
 <p align="center"> Em geral a ideia aqui é facilitar a navegação entre as futuras features, e o reinicio de uma partida. Alem disso quero por a snake para ficar em um ciclo hamiltoniano no fundo do menu principal. 🚧 Em construção... 🚧</p>
