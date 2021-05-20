@@ -7,7 +7,10 @@
   <a href="https://github.com/axeljunior/Snake-game/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/axeljunior/Snake-game">
   </a>
-    
+  
+    <a href="https://www.repostatus.org/#wip"><img src="https://www.repostatus.org/badges/latest/wip.svg" />
+  </a>
+  
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    
    <a href="https://github.com/axeljunior/Snake-game">
